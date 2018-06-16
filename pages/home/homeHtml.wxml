@@ -1,0 +1,36 @@
+<import src="/template/apptemp.wxml"/>
+<import src="/template/classify.wxml"/>
+<import src="/template/menu/wxMenu.wxml"/>
+<import src="/template/list/wxList.wxml"/>
+<import src="/template/index/searchTemplate.wxml"/>
+<import src="/layout/media.wxml"/>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+<template is="searchTemplate" data="{{currentCity}}"/>
+
+<template is='wxMenu' data="{{audioData,progress}}" />
+
+<template is="media-img"  data="{{title:'毛衣'}}" mode="scaleToFill"/>
+<template is="media-text"  data="{{text:'常熟服装城批发市场'}}"/>
+
+<template is="media-nav"  data="{{title:'T恤'}}"/>
+<block wx:for="{{TShirt}}" wx:key="unique">
+<template is="wxList" data="{{item}}"/>
+</block>
+
+
+<template is="media-nav"  data="{{title:'毛衣'}}"/>
+<block wx:for="{{Sweater}}" wx:key="unique">
+<template is="wxList" data="{{item}}"/>
+</block>
+<!-- 需要使用 button 来授权登录
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view wx:else>请升级微信版本</view>
+ -->

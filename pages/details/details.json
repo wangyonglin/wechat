@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品详细",
+  "usingComponents": {
+    "service": "/components/service"
+  }
+}

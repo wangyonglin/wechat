@@ -1,0 +1,15 @@
+<template name="wxList">
+  <navigator url="../details/details?uuid={{item.uuid}}">
+    <view class="list_container">
+      <view class='list_block'>
+        <image class="list_image" src="{{item.imgsrc}}"></image>
+        <view class="media-blocks-footer">
+          <view class="media-blocks-title">#{{item.name}}</view>
+          <view class="media-blocks-datetime">[{{item.classify}}]</view>
+        </view>
+
+      </view>
+
+    </view>
+  </navigator>
+</template>

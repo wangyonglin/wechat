@@ -1,0 +1,24 @@
+
+
+
+<template name="searchTemplate">
+  <view class="flex-row " style=' background-color: White;'>
+    <view class='flex-view-item'>
+      <view class='position_view'>
+        <button class="iconfont icon-weizhi">{{currentCity}}</button>
+      </view>
+    </view>
+
+    <view class='flex-view-item '>
+
+      <navigator url="../search/search">
+        <view class="search_view">
+          <icon size='21' type='search'></icon>
+          <input disabled placeholder="请输入关键字或款号" value="" />
+        </view>
+      </navigator>
+
+    </view>
+
+  </view>
+</template>

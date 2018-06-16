@@ -1,0 +1,87 @@
+<template name="item_block_x">
+  <block wx:for="{{items_x}}" wx:key="unique">
+
+    <view class="container_body">
+      <view class="video" data-id="{{item.uuid}}" bindtap="onClickEventListener">
+        <image style="width: 750rpx;height: calc(9 * 750rpx / 16);" src="{{item.img}}"></image>
+        <view class="model-btn">
+          <view class="play-icon"></view>
+        </view>
+      </view>
+      <view class='media-blocks media-color-white'>
+        <text class='media-blocks-title'>{{item.title}}</text>
+        <span class="media-blocks-datetime" style="white-space: pre;">
+          <icon class="iconfont icon-shijian"></icon> {{item.datetime}}</span>
+        <view class="media-blocks-line"></view>
+      </view>
+    </view>
+
+  </block>
+</template>
+
+
+<template name="item_block_y">
+  <block class=" container_block" wx:for="{{items_y}}" wx:key="unique">
+
+    <view class="container_body">
+      <view class="video" data-id="{{item.uuid}}" bindtap="onClickEventListener">
+        <image style="width: 750rpx;height: calc(9 * 750rpx / 16);" src="{{item.img}}"></image>
+        <view class="model-btn">
+          <view class="play-icon"></view>
+        </view>
+      </view>
+      <view class='media-blocks media-color-white'>
+        <text class='media-blocks-title'>{{item.title}}</text>
+        <span class="media-blocks-datetime" style="white-space: pre;">
+          <icon class="iconfont icon-shijian"></icon> {{item.datetime}}</span>
+        <view class="media-blocks-line"></view>
+      </view>
+    </view>
+
+  </block>
+</template>
+
+
+<template name="item_block_z">
+  <block class=" container_block" wx:for="{{items_z}}" wx:key="unique">
+
+    <view class="container_body">
+      <view class="video" data-id="{{item.uuid}}" bindtap="onClickEventListener">
+        <image style="width: 750rpx;height: calc(9 * 750rpx / 16);" src="{{item.img}}"></image>
+        <view class="model-btn">
+          <view class="play-icon"></view>
+        </view>
+      </view>
+      <view class='media-blocks media-color-white'>
+        <text class='media-blocks-title'>{{item.title}}</text>
+        <span class="media-blocks-datetime" style="white-space: pre;">
+          <icon class="iconfont icon-shijian"></icon> {{item.datetime}}</span>
+        <view class="media-blocks-line"></view>
+      </view>
+    </view>
+
+  </block>
+</template>
+
+
+
+<template name="video_template">
+  <block wx:for="{{items_x}}" wx:key="unique">
+
+    <view class="container_body">
+      <view class="video" data-id="{{item.uuid}}" bindtap="onClickEventListener">
+        <image style="width: 750rpx;height: calc(9 * 750rpx / 16);" src="{{item.img}}"></image>
+        <view class="model-btn">
+          <view class="play-icon"></view>
+        </view>
+      </view>
+      <view class='media-blocks media-color-white'>
+        <text class='media-blocks-title'>{{item.title}}</text>
+        <span class="media-blocks-datetime" style="white-space: pre;">
+          <icon class="iconfont icon-shijian"></icon> {{item.datetime}}</span>
+        <view class="media-blocks-line"></view>
+      </view>
+    </view>
+
+  </block>
+</template>

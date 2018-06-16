@@ -1,0 +1,26 @@
+<!--pages/mine/me/me.wxml-->
+
+<scroll-view scroll-into-view="{{toView}}"  style="height:{{srollHeight}}px;" scroll-y="true" scroll-with-animation="true" >
+  <view class="block" style="height:{{srollHeight}}px;" >
+    <view class="title" id="Market">常熟服装批发市场</view>
+  <image class="empty_tip" mode="widthFix" src='https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C33%2C760%2C501%3Bc0%3Dbaike92%2C5%2C5%2C92%2C30/sign=7c459e3b3087e9505658a92c2d087f70/4a36acaf2edda3ccb69c29d80be93901203f92ca.jpg'></image>
+    <text class="body"> 江苏常熟是中国著名的服装城，全市拥有各类服装服饰企业一千多家，年产值一百三十亿元人民币，涌现了众多国内知名品牌。而一些国际名牌也在这里设立了加工厂。常熟服装出口达三点四亿元。</text>
+  </view>
+  
+
+  <view class="block" style="height:{{srollHeight}}px;">
+    <view class="title" id="AboutUs">关于我们</view>
+    <view>姓名: 王永林</view>
+    <view>中国银行：</view>
+    <view>工商银行：</view>
+    <view >微信电话: 18261779960</view>
+    <view>地址: 江苏省常熟市服装城4区89号转角</view>
+  </view>
+  <view class="block" style="height:{{srollHeight}}px;">
+    <view class="title" id="Developer">开发者</view>
+    <view>管理员: 王永林</view>
+     <view >微信电话: 18261779960</view>
+     <view >QQ: 331848925</view>
+    <view>Email：admin@eeob.com</view>
+  </view>
+</scroll-view>

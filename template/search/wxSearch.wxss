@@ -1,0 +1,67 @@
+.upper {
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 100rpx;
+  list-style: none;
+  background-color: white;
+  border-bottom: 1px solid gainsboro;
+}
+
+.upper-left {
+  line-height: 80rpx;
+  width: 580rpx;
+  height: 80rpx;
+  background-color: #edece8;
+  margin: 10rpx;
+  border: 1rpx solid #edece8;
+  border-radius: 15rpx;
+
+}
+
+.upper-left icon {
+  float: left;
+  margin-top: 5rpx;
+  margin-left: 10rpx;
+  margin-bottom: 15rpx;
+  line-height: 80rpx;
+  font-size: 45rpx;
+  color: #edece8;
+}
+
+.upper-left input {
+  margin-top: 5rpx;
+  padding-left: 10rpx;
+  margin-bottom: 5rpx;
+  float: left;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 45rpx;
+  color: black;
+  text-indent: 10rpx;
+}
+
+.upper-right {
+  float: right;
+  width: 140rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.upper-right button {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 14pt;
+  background-color: white;
+}
+
+.upper-right button::after {
+  outline: none;
+  border: none;
+  list-style: none;
+}
+
+.upper-right button icon {
+  font-size: 16pt;
+  color: gray;
+}

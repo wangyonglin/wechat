@@ -1,0 +1,58 @@
+.White{
+   background-color: white;
+}
+.Rose{
+  background-color: #f0145a;
+}
+.Red{
+  background-color: white;
+}
+.Black{
+  background-color:black;
+}
+.rose{
+color:#f0145a;
+}
+.red{
+  color: red;
+}
+.white{
+  color: white;
+}
+
+.black{
+ color: black
+}
+.Green{
+   background-color: green;
+}
+.green{
+  color: green;
+}
+.pin {
+  position: fixed;
+  z-index: 1;
+}
+.center{
+   text-align: center;
+}
+
+.margin{
+ margin: 10rpx;
+}
+.bold{
+  font-weight: bold;
+}
+.row{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.left{
+  float: left;
+}
+.right{
+  float:right;
+}
+.size{
+  font-size: 17pt;
+}

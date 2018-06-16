@@ -1,0 +1,8 @@
+@import "../../accset/media/media.wxss";
+@import "../../template/comment/wxComment.wxss";
+
+.player-block {
+  float: left;
+  height: 100rpx;
+  width: 750rpx;
+}

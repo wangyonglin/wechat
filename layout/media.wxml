@@ -1,0 +1,56 @@
+<template name="media-nav">
+  <navigator url="../list/listHtml?search={{title}}" hover-class="other-navigator-hover">
+    <view class="media-nav">
+      <span class="left"> {{title}}</span>
+      <span class="right">
+        <icon class="iconfont icon-htmal5icon40"></icon>
+      </span>
+    </view>
+  </navigator>
+
+</template>
+
+<template name="media-img">
+  <view class="media-img">
+    <image src="https://wangyonglin.oss-cn-shanghai.aliyuncs.com/897905175708477756.jpg" mode="aspectFill">
+    </image>
+  </view>
+</template>
+
+<template name="media-text">
+  <view class="media-text">
+    {{text}}
+  </view>
+</template>
+
+
+<template name="media-toView">
+  <navigator url="../list/listHtml?search={{title}}" hover-class="other-navigator-hover">
+    <view class="media-nav">
+      <span class="left"> {{title}}</span>
+      <span class="right">
+        <icon class="iconfont icon-htmal5icon40"></icon>
+      </span>
+    </view>
+  </navigator>
+
+</template>
+
+<template name="layout-lowper">
+
+  <view class="lower pin bold size">
+
+    <view class='left row White black center' style="width: 450rpx;height:100rpx;  line-height:100rpx;">
+      ¥100
+    </view>
+    <view class='right row Rose white center' style="width: 250rpx; height:100rpx;line-height:100rpx;">
+      付款
+    </view>
+
+
+  </view>
+</template>
+
+<template name="service">
+  <image src="http://static.nipic.com/images/ppaa.gif" class="service" ></image>  
+</template>

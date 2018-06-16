@@ -1,0 +1,34 @@
+<import src="/template/video_template.wxml" />
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">服装展示</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">没屌事干</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">无私电影</view>
+  </view>
+  <view  style="height:90rpx;"></view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: {{winHeight*2 +'rpx'}}">
+        <block wx:for="{{video_classify_data_1}}" wx:key="unique">
+          <template is="videoTemplate" data="{{item}}" />
+        </block>
+      </scroll-view>
+
+
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: {{winHeight*2 +'rpx'}}">
+        <block wx:for="{{video_classify_data_2}}" wx:key="unique">
+          <template is="videoTemplate" data="{{item}}" />
+        </block>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height: {{winHeight*2 +'rpx'}}">
+        <block wx:for="{{video_classify_data_3}}" wx:key="unique">
+          <template is="videoTemplate" data="{{item}}" />
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

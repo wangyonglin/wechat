@@ -1,0 +1,14 @@
+<import src="/template/list/wxList.wxml"/>
+<import src="/template/search/wxSearch.wxml"/>
+<template is="search_template"/>
+
+
+<view wx:if="{{numberOfElements>0}}">
+  <block wx:for="{{items_search}}" wx:key="unique">
+    <template is="wxList" data="{{item}}" />
+  </block>
+</view>
+<view wx:elif="{{numberOfElements==-1}}">
+  <image class="empty_tip" mode="widthFix" src='https://wangyonglin.oss-cn-shanghai.aliyuncs.com/1686316585474851379.jpg'></image>
+</view>
+<view wx:else class='index-hd'>没有你要的东西！</view>

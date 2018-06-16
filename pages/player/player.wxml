@@ -1,0 +1,31 @@
+<import src="/template/comment/wxComment.wxml" />
+<view class='container '>
+  <video style="width: 750rpx;height: calc(9 * 750rpx / 16);" id="myVideo" src="{{items.src}}" poster="{{items.img}}" objectFit="cover" controls autoplay="true"></video>
+
+  <view class="player-block media-background-white">
+
+    <text class='media-blocks-title '>{{items.title}}</text>
+    <view class="media-blocks-datetime">
+      <icon class="iconfont icon-shijian"></icon>
+      {{items.datetime}}
+    </view>
+    
+  </view>
+</view>
+
+<view class='index-hd'>
+<view class='index-logo'>
+</view>
+  <view class='index-desc'>王永林:"如果有人要联系我 就点击右下角微信图标吧"!
+  你也可以在下面评论哦。。。(*^‧^*)啵一个! 
+  其实我就是想多打两个字用来测试显示效果。呵呵
+  </view >
+
+</view>
+<scroll-view scroll-y="true" bindscrolltolower='lower' class=''>
+  <block wx:for="{{comment_list}}" wx:key="unique">
+    <template is="wxCommentResult" data="{{item}}" />
+  </block>
+</scroll-view>
+<view style='height:100rpx'></view>
+<template is="wxComment" data="{{uuid}}" />

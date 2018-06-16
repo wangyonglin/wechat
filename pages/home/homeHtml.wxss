@@ -1,0 +1,10 @@
+/* pages/homeHtml/homeHtml.wxss */
+@import "../../template/menu/wxMenu.wxss";
+@import "../../template/list/wxList.wxss";
+.slide-image {
+  width: 100%;
+}
+
+
+
+

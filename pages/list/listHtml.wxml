@@ -1,0 +1,10 @@
+<import src="/layout/media.wxml" />
+<import src="/template/list/wxList.wxml" />
+<template is="media-text" data="{{text}}" />
+
+<view wx:if="{{numberOfElements>0}}">
+  <block wx:for="{{items_search}}" wx:key="unique">
+    <template is="wxList" data="{{item}}" />
+  </block>
+</view>
+<view wx:else class='index-hd'>没有你要的东西！</view>

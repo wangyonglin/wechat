@@ -1,0 +1,63 @@
+<template name="search_block">
+  <view class="flex-row " style=' background-color: White;'>
+    <view class='flex-view-item'>
+      <view class='position_view'>
+        <button class="iconfont icon-weizhi">{{currentCity}}</button>
+      </view>
+    </view>
+    <view class='flex-view-item ' bindtap="search_navigateTo">
+      <view class="search_view">
+        <icon size='21' type='search'></icon>
+        <input disabled placeholder="请输入关键字或款号" value="" />
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<template name="dd">
+  <view class="flex-wrap " style=' background-color: White;'>
+
+  <view class='flex-wrap-items'>
+    <view class='info-item'>
+      <view class='block_view' bindtap='calling'>
+      <icon style='background-color: cornflowerblue;' class="iconfont icon-creditlevelfilling"></icon>
+      <text>电话</text>
+      </view>
+    </view>
+
+  </view>
+  <view class='flex-wrap-items'>
+    <view  class='info-item'>
+      <view class='block_view'>
+      <icon style='background-color: deeppink;' class="iconfont icon-creditlevelfilling"></icon>
+      <text>爆款</text>
+        </view>
+    </view>
+
+  </view>
+  <view class='flex-wrap-items'>
+    <view  class='info-item'>
+      <view class='block_view'>
+      <icon style='background-color: violet;' class="iconfont icon-favoritesfilling"></icon>
+      <text>新款</text>
+      </view>
+      
+    </view>
+
+
+  </view>
+
+  <view class='flex-wrap-items' >
+    <view  class='info-item'>
+         <view class='block_view'  >
+      <icon style='background-color: orangered;' class="iconfont icon-youhuijuan"></icon>
+      <text>特价</text>
+        </view>
+    </view>
+
+  </view>
+
+
+</view>
+</template>

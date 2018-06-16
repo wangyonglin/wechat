@@ -1,0 +1,18 @@
+<template name="search_template">
+  <form bindsubmit="wxSerach">
+    <view class="upper ">
+      <view class='upper-left'>
+        <icon size='21' type="search"></icon>
+        <input bindinput="inputValues" placeholder-style="color:red" placeholder="请在此输入你要的" bindconfirm="wxSerach" confirm-type="search" auto-focus/>
+      </view>
+
+      <view class='upper-right'>
+        <button formType="submit" hover-class='none'>搜索
+        </button>
+      </view>
+
+
+    </view>
+  </form>
+
+</template>

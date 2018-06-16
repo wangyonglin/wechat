@@ -1,0 +1,20 @@
+<template name="videoTemplate">
+  <navigator url="../player/player?uuid={{item.uuid}}">
+
+    <view class="container_body">
+      <view class="video">
+        <image style="width: 750rpx;height: calc(9 * 750rpx / 16);" src="{{item.img}}"></image>
+        <view class="model-btn">
+          <view class="play-icon"></view>
+        </view>
+      </view>
+      <view class='video-block media-background-white'>
+        <text class='media-blocks-title '>{{item.title}}</text>
+        <span class="media-blocks-datetime" style="white-space: pre;">
+          <icon class="iconfont icon-shijian"></icon> {{item.datetime}}</span>
+       
+      </view>
+    </view>
+  </navigator>
+
+</template>

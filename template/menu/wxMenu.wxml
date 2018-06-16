@@ -1,0 +1,59 @@
+<template name="wxMenu">
+  <view class="flex-wrap " style=' background-color: White;'>
+
+    <view class='flex-wrap-items'>
+      <view class='info-item'>
+        <view class='block_view' bindtap='calling'>
+          <icon style='background-color: cornflowerblue;' class="iconfont icon-htmal5icon04"></icon>
+          <text>电话</text>
+        </view>
+      </view>
+
+    </view>
+
+     <view class='flex-wrap-items'>
+      <view class='info-item'>
+        <view class='block_view' bindtap='MusicPlayerEx'>
+          <icon style='background-color: orangered;' class="iconfont icon-gonggaoguanli"></icon>
+          <text>公告</text>
+        </view>
+      </view>
+
+    </view>
+     <view class='flex-wrap-items'>
+      <view class='info-item'>
+        <view class='block_view'>
+          
+          <button class="cs_button" open-type="contact" >
+  <icon style='background-color: #0BC317;' class="iconfont icon-weixin1"></icon>
+</button> 
+          <text>微信</text>
+        </view>
+
+      </view>
+    </view>
+    <view class='flex-wrap-items'>
+      <view class='info-item'>
+        <view class='block_view' bindtap='locationButton'>
+          <icon style='background-color: deeppink;' class="iconfont icon-shouhuodizhi"></icon>
+          <text>定位</text>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+    <progress percent="{{progress}}" stroke-width="2" color="#f0145a" />
+
+
+  <block wx:for="{{audioData}}" wx:for-item="item" wx:for-index="idx" wx:key="unique">
+    <audio bindtimeupdate="MusicStart" bindended="MusicEnd" id="myAudio" src="{{item.src}}">
+
+
+    </audio>
+
+  </block>
+
+
+</template>

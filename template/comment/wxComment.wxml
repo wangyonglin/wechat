@@ -1,0 +1,40 @@
+<template name="wxCommentResult">
+  <view class="comment-view">
+    <!--评论头-->
+    <view class="comment-header">
+      <view class='comment-header-left'>
+        <image class="comment-header-avatar" src="{{item.avatarUrl}}" background-size="cover">
+        </image>
+      </view>
+      <view class="comment-header-right">
+        <view class="comment-header-nickname">{{item.nickName}}</view>
+        <view class="comment-header-gps"> {{item.formatted_address}}</view>
+      </view>
+
+    </view>
+    <!--评论内容-->
+    <view class="comment-content">{{item.content}}</view>
+
+    <view class="comment-footer">
+      <view class="comment-footer-datetime">{{item.datetime}}</view>
+    </view>
+
+  </view>
+
+</template>
+
+<template name="wxComment">
+  <form bindreset="reset" class="lower pin White">
+    <input class="lower-left " placeholder-style="color:red" bindinput="bindKeyInput" bindconfirm="wxSend" confirm-type="send" placeholder="  请在此评论！暂时不支持表情包" />
+    <view class='lower-right'>
+
+      <button class="lower-right-wechat" open-type="contact">
+        <icon class="iconfont icon-weixin1"></icon>
+      </button>
+
+      <button class="lower-right-send " bindtap='wxSend' data-Uuid='{{uuid}}'  formType="reset" >
+        <icon size='32' class="iconfont icon-send"></icon>
+      </button>
+    </view>
+  </form>
+</template>

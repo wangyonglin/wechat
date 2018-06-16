@@ -1,0 +1,3 @@
+@import "/wxSearch/wxSearch.wxss";
+@import "/template/search/wxSearch.wxss";
+@import "../../template/list/wxList.wxss";

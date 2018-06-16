@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/homeHtml",
+    "pages/list/listHtml",
+    "pages/category/category",
+    "pages/video/video",
+    "pages/search/search",
+    "pages/service/service",
+    "pages/player/player",
+    "pages/details/details",
+    "pages/discover/discover",
+    "pages/mine/mine",
+    "pages/mine/pages/us/us",
+    "pages/mine/pages/wechat/wechat",
+    "pages/mine/pages/address/address",
+    "pages/mine/pages/me/me"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0145A",
+    "navigationBarTitleText": "Eeob",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#818181",
+    "selectedColor": "#FF0000",
+    "list": [
+      {
+        "pagePath": "pages/home/homeHtml",
+        "text": "首页",
+        "iconPath": "images/ico-home.png",
+        "selectedIconPath": "images/ico-home-d.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/ico-category.png",
+        "selectedIconPath": "images/ico-category-d.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "images/ico-faxian.png",
+        "selectedIconPath": "images/ico-faxian-d.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/ico-mine.png",
+        "selectedIconPath": "images/ico-mine-d.png"
+      }
+    ]
+  }
+}

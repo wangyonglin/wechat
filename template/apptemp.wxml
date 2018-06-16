@@ -1,0 +1,19 @@
+<template name="service_block">
+  <view class='service'>
+    <button open-type="contact" session-from="weapp" plain='true'>
+      <image src="https://wangyonglin.oss-cn-shanghai.aliyuncs.com/videos/2018/service.jpg" mode="widthFix"></image>
+    </button>
+  </view>
+</template>
+
+<template name="clothing_block">
+  <div class="item_block">
+      <view class="item" wx:for="{{clothing_classify}}" wx:for-index="idx" wx:for-item="item">
+        <image class="item_body"src="{{item.imgsrc}}" ></image>
+        <view class="item_footer">
+        <text>{{item.name}}</text>
+        <span>{{item.classify}}</span>
+        </view>
+      </view>
+  </div>
+</template>

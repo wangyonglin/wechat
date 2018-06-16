@@ -1,0 +1,56 @@
+.list_container {
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 2px;
+  background-color: white;
+}
+
+.list_container  .list_block {
+  width: 367.5rpx;
+  height: 480rpx;
+}
+
+.list_container  .list_block .list_image {
+  width: 367.5rpx;
+  height: 367.5rpx;
+}
+
+.list_container .list_footer {
+  float: left;
+  width: 367.5rpx;
+  height: 60rpx;
+ 
+}
+
+.list_footer  .title {
+  float: left;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: left;
+  color: black;
+}
+
+.list_footer  .classify {
+  float: right;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  font-size: 28rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: left;
+  color: black;
+}
+
+.list_blocks{
+   width: 367.5rpx;
+  height: 600rpx;
+}
+.list_blocks-footer{
+   float: left;
+  width: 367.5rpx;
+  height: 80rpx;
+}

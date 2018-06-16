@@ -1,0 +1,53 @@
+@import "../../accset/media/media.wxss";
+
+.audio_container {
+  text-align: center;
+  background-color: red;
+}
+
+.info-item{
+  padding: 20rpx;
+  margin-right: 10rpx;
+  margin-top: 5rpx;
+  text-align: center;
+
+width: 130rpx;
+display: flex;
+justify-content: center;
+}
+
+
+.info-item icon {
+  display: block;
+
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 45rpx;
+  color: white;
+  line-height: 80rpx;
+
+  border-radius: 100rpx;
+}
+
+.info-item text {
+  display: block;
+  margin-top: 5px;
+  font-size: 24rpx;
+  color:#4A4A4A;
+  /*设置文字溢出部分为...*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cs_button {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #fff;
+   font-size: 28rpx;
+ 
+  border:none; /*正常来说加上这个是可以去掉边框的*/
+}
+.cs_button:after {
+  border: 0px;
+}

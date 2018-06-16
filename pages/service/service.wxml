@@ -1,0 +1,18 @@
+  
+  <view class="index-hd">
+  <view class="index-desc">以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。</view>
+</view>
+
+  <view class="comment-view">
+   <!--评论头-->
+    <view class="comment-header">
+      <image class="comment-header-avatar" src="https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIfanFzmAMw8DqO6pFQYD4fPDPsCv2ibEibibggQYLDL11rbibElXFKddVH2I6MNaAmEYVIlZRSibsO1jA/132" background-size="cover"></image>
+      <view class="comment-header-nickname">eeob</view>
+    </view>
+    <!--评论内容-->
+    <view class="comment-content">
+     以下将展示小程序官方组件能力，组件样式仅供参考，开发者可根据自身需求自定义组件样式，具体属性参数详见小程序开发文档。
+    </view>
+    <view class="comment-datetime">dddd
+    </view>
+  </view>

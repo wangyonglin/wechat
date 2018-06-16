@@ -1,0 +1,219 @@
+.comment-view {
+  width: 710rpx;
+  background-color: white;
+  border: 2rpx #f0145a;
+  margin: 20rpx;
+  border-radius: 10rpx;
+}
+
+.comment-header {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+.comment-header-left {
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.comment-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  float: right;
+  width: 590rpx;
+  height: 120rpx;
+}
+
+/* pages/mine/mine.wxss */
+
+.comment-header-avatar {
+  float: left;
+  width: 90rpx;
+  height: 90rpx;
+  margin: 15rpx;
+  border-radius: 50%;
+}
+
+.comment-header-nickname {
+  margin-top: 20rpx;
+  height: 35rpx;
+  float: left;
+  font-size: 24rpx;
+  color: black;
+}
+
+.comment-header-gps {
+  height: 50rpx;
+  float: left;
+  font-size: 28rpx;
+  color: gainsboro;
+}
+
+.comment-content {
+  padding-left: 120rpx;
+  padding-right: 30rpx;
+  align-items: left;
+  color: black;
+  font-size: 32rpx;
+}
+
+.comment-footer {
+  text-align: right;
+  padding-right: 15rpx;
+  padding-bottom: 20rpx;
+  color: gainsboro;
+}
+
+.comment-footer-datetime {
+  text-align: right;
+  font-size: 28rpx;
+  color: gainsboro;
+
+}
+
+/* dddd */
+
+
+
+.lower-left {
+  float: left;
+  margin-left: 20rpx;
+  width: 530rpx;
+  height: 100rpx;
+  min-width: 300rpx;
+}
+
+.lower-right {
+  float: right;
+  width: 200rpx;
+  height: 100rpx;
+  background: none;
+    font-size: 32rpx;
+}
+
+.lower-right button::after {
+  outline: none;
+  border: none;
+  list-style: none;
+}
+.lower-right button icon{
+   font-size: 55rpx;
+  color: gray;
+}
+.lower-right-send {
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+
+  border: none; /*正常来说加上这个是可以去掉边框的*/
+}
+
+.lower-right-wechat {
+  float: right;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+
+  border: none; /*正常来说加上这个是可以去掉边框的*/
+}
+
+/* 订单 */
+
+.order {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+}
+
+.myorder-text {
+  font-size: 30rpx;
+  color: gray;
+  margin: 20rpx;
+  width: 40%;
+}
+
+.myorderlook-text {
+  font-size: 30rpx;
+  color: gray;
+  position: relative;
+  right: 20rpx;
+  width: 60%;
+  text-align: right;
+}
+
+.next-image {
+  width: 20rpx;
+  height: 25rpx;
+  position: relative;
+  right: 10rpx;
+}
+
+.navs {
+  display: flex;
+}
+
+.nav-item {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.nav-item .nav-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 5rpx;
+}
+
+.nav-item text {
+  margin-top: 20rpx;
+  font-size: 25rpx;
+  color: gray;
+}
+
+/* 列表 */
+
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
+
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+
+.item-text {
+  color: gray;
+  font-size: 25rpx;
+  margin-left: 20rpx;
+}
+
+.person-line {
+  width: 100%;
+  height: 2rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}

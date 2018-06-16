@@ -1,0 +1,53 @@
+<import src="/template/comment/wxComment.wxml" />
+<import src="/template/media/wxMedia.wxml" />
+<import src="/layout/media.wxml"/>
+<template is="wxMedia" data="{{media}}"/>
+<service id="toastedit">{{toastText}}</service>       
+<scroll-view scroll-y="true">
+  <view class="detail media-background-white">
+    <text class="title ">LANCOME兰蔻小黑瓶精华肌底液</text>
+
+    <text class=" media-font-red   ">￥500</text>
+    <text class=" media-font-black ">货号：1024</text>
+    <text class=" media-font-black ">尺码：1XL 2XL 3XL 4XL 5XL 6XL</text>
+  </view>
+  <view class="separate center" style="width: 750rpx;height:80rpx; line-height:80rpx;font-size:12pt;" > 老板说了:"包邮"...</view>
+
+
+</scroll-view>
+<view style="height:120rpx;"></view>
+<view class="container">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">商品详情</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">商品评价</view>
+
+  </view>
+
+  <view class='detail-text'>
+    <block wx:if="{{currentTab==0}}">
+   
+        <block wx:for-items="{{detailImg}}" wx:key="name">
+          <image class="image_detail" src="{{item}}" />
+        </block>
+     
+      <template is="layout-lowper"/>
+    
+    </block>
+
+    <block wx:if="{{currentTab==1}}">
+      <scroll-view scroll-y="true" bindscrolltolower='lower' class=''>
+        <block wx:for="{{comment_list}}" wx:key="unique">
+           <template is="wxCommentResult" data="{{item}}"/>
+        </block>
+      </scroll-view>
+      <view style='height:100rpx'></view>
+     <template is="wxComment" data="{{uuid}}" />
+    </block>
+  </view>
+
+
+
+   
+</view>
+
+<!-------------------------------->

@@ -1,0 +1,4 @@
+.video-block{
+  height: 100rpx;
+  width: 750rpx;
+}

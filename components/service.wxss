@@ -1,0 +1,13 @@
+.lowper {
+  height: 230rpx;
+  width: 160rpx;
+  position: fixed;
+  bottom: 100rpx;
+  right: 0rpx;
+  z-index: 100;
+  opacity: 1;
+}
+
+button {
+  border: none;
+}

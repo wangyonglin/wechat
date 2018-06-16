@@ -1,0 +1,37 @@
+<view class="html_info_header">
+  <swiper  indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>
+<view class="html_info_title media-background-white">
+  <text class="name">有钱人</text>
+  <text class="number">#8803</text>
+  <text class="datetime">2018年8月11日</text> 
+</view>
+<view class="html_info_message">
+
+</view>
+<view class="html_info_body">
+
+</view>
+<view class="html_info_footer">
+
+</view>
+
+
+
+
+<view class='text' bindtap='chooseSezi'>请选择：颜色/尺码</view>
+
+
+<!--隐藏区域  -->
+<view class='maskLayer' wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+<view class='choose' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+  这里面是内容
+</view>
+

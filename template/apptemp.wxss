@@ -1,0 +1,61 @@
+/*客服 按钮 事件 样式*/
+
+.service button {
+  border: none;
+  height: 180rpx;
+  background: none;
+  border-radius: 0;
+  line-height: 160rpx;
+  color: #333;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.deg button:after {
+  border: none;
+}
+
+.item_block {
+  margin-top: 10rpx;
+  width: 750rpx;
+  background-color:beige;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+
+.item{
+ width: 365rpx;
+  height: 480rpx;
+   margin-left: 5rpx;
+   margin-right: 5rpx;
+}
+
+.item_body{
+  width: 365rpx;
+  height: 360rpx;
+ 
+}
+.item_footer{
+  width: 365rpx;
+  height: 100rpx;
+  background-color: snow;
+  margin-bottom: 40rpx;
+}
+.item_footer text{
+
+margin-left: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: black;
+}
+.item_footer span{
+  margin-right: 20rpx;
+  float: right;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: yellowgreen;
+}

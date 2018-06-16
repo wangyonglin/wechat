@@ -1,0 +1,58 @@
+.html_info_header swiper {
+  width: 750rpx;
+  height: 650rpx;
+}
+
+.html_info_title {
+  width: 730rpx;
+  padding: 10rpx;
+  height: 500rpx;
+  background-color: yellowgreen;
+}
+
+.html_info_title .name {
+  float: left;
+  width: 750rpx;
+  font-size: 45rpx;
+}
+
+.html_info_title .number {
+  float: left;
+  width: 750rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 45rpx;
+}
+
+.html_info_title .datetime {
+  float: right;
+  text-align: right;
+  width: 750rpx;
+  background-color: yellow;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 36rpx;
+  color: blueviolet;
+}
+
+.html_info_message {
+
+  width: 730rpx;
+  height: 500rpx;
+  padding: 10rpx;
+  background-color: blueviolet;
+}
+
+.html_info_body {
+  width: 730rpx;
+  height: 500rpx;
+  padding: 10rpx;
+  background-color: yellow;
+}
+
+.html_info_footer {
+  width: 730rpx;
+  height: 500rpx;
+  padding: 10rpx;
+  background-color: red;
+}

@@ -1,0 +1,76 @@
+/*index.wxss*/
+
+
+.container {
+  width: 750rpx;
+}
+
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  width: 750rpx;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.video {
+  position: relative;
+}
+
+.model-img {
+  width: 100%;
+}
+
+.model-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.play-icon {
+  margin: 28rpx 42rpx;
+  border-top: 26rpx solid transparent;
+  border-left: 36rpx solid #fff;
+  border-bottom: 22rpx solid transparent;
+}
+
+swiper-item {
+  width: 750rpx;
+}
