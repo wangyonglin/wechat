@@ -2,16 +2,15 @@
 <import src="/template/media/wxMedia.wxml" />
 <import src="/layout/media.wxml"/>
 <template is="wxMedia" data="{{media}}"/>
-<service id="toastedit">{{toastText}}</service>       
+<service/>       
 <scroll-view scroll-y="true">
   <view class="detail media-background-white">
     <text class="title ">LANCOME兰蔻小黑瓶精华肌底液</text>
 
-    <text class=" media-font-red   ">￥500</text>
     <text class=" media-font-black ">货号：1024</text>
     <text class=" media-font-black ">尺码：1XL 2XL 3XL 4XL 5XL 6XL</text>
   </view>
-  <view class="separate center" style="width: 750rpx;height:80rpx; line-height:80rpx;font-size:12pt;" > 老板说了:"包邮"...</view>
+  <view class="separate center red" style="width: 750rpx;height:80rpx; line-height:80rpx;font-size:12pt;" > 老板说了:"包邮"...</view>
 
 
 </scroll-view>

@@ -81,14 +81,15 @@
 .lower-left {
   float: left;
   margin-left: 20rpx;
-  width: 530rpx;
+  width: 600rpx;
   height: 100rpx;
   min-width: 300rpx;
+  
 }
 
 .lower-right {
   float: right;
-  width: 200rpx;
+  width: 130rpx;
   height: 100rpx;
   background: none;
     font-size: 32rpx;
@@ -101,7 +102,7 @@
 }
 .lower-right button icon{
    font-size: 55rpx;
-  color: gray;
+  color: #f0145a;
 }
 .lower-right-send {
   float: left;

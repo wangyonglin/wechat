@@ -133,5 +133,10 @@ Page({
       //用户按了拒绝按钮
     }
 
+  },
+  btn:function(){
+    wx.navigateTo({
+      url: "../../pages/authorization/authorization",
+    })
   }
 })

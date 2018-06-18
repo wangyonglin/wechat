@@ -13,8 +13,9 @@
     "pages/mine/pages/us/us",
     "pages/mine/pages/wechat/wechat",
     "pages/mine/pages/address/address",
-    "pages/mine/pages/me/me"
-
+    "pages/mine/pages/me/me",
+    "pages/order/orderPage",
+    "pages/authorization/authorization"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -52,5 +53,10 @@
         "selectedIconPath": "images/ico-mine-d.png"
       }
     ]
-  }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

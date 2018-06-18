@@ -16,6 +16,7 @@ App({
     wx.setStorageSync('logs', logs)
     login.login();
 
+    
   },
   globalData: {
   //  userInfo: {},
@@ -117,6 +118,20 @@ App({
   //获取用户getinfo事件
   infoListener:function(e){
     console.count("infoListener:run...");
+  },
+  chooseAddress: function (callback){
+    wx.chooseAddress({
+      success: function (res) {
+        console.log(JSON.stringify(res))
+        wx.setStorage({
+          key: 'chooseAddress',
+          data: res,
+        })
+        typeof callback == "function" && callback(res)
+      },
+      fail: function (err) {
+        console.log(JSON.stringify(err))
+      }
+    })
   }
-
 })

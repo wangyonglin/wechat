@@ -1,3 +1,15 @@
+wfull{
+  width: 750rpx;
+}
+.hfull{
+  height: 100%;
+}
+.h100{
+   height: 100rpx;
+}
+.l100{
+  line-height: 100rpx;
+}
 .White{
    background-color: white;
 }
@@ -5,10 +17,22 @@
   background-color: #f0145a;
 }
 .Red{
-  background-color: white;
+  background-color: red;
 }
 .Black{
   background-color:black;
+}
+.Dodgerblue{
+ background-color:  	#1E90FF;
+}
+.dodgerblue{
+color: 	#1E90FF;
+}
+.Mediumslateblue{
+background:#317EF3;
+}
+.mediumslateblue{
+color:#317EF3;
 }
 .rose{
 color:#f0145a;

@@ -1,5 +1,5 @@
 var wc = require("../../template/comment/wxComment.js");
-
+var app = getApp();
 Page({
   data: {
     media:{
@@ -153,5 +153,19 @@ Page({
   },
   showToast: function () {
     this.service.showToast('我是传过来的toast内容', 2000)
-  }  
+  },
+  orderPage:function(res){
+
+    wx.navigateTo({
+      url: '../../pages/order/orderPage',
+      success: function (res) {
+        console.log(res)
+      },
+      fail: function (res) {
+        console.log(res)
+      }
+    })
+  },
+  //
+
 })

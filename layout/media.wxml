@@ -40,11 +40,11 @@
 
   <view class="lower pin bold size">
 
-    <view class='left row White black center' style="width: 450rpx;height:100rpx;  line-height:100rpx;">
+    <view class='left row  White black center' style="width: 450rpx;height:100rpx;  line-height:100rpx;">
       ¥100
     </view>
-    <view class='right row Rose white center' style="width: 250rpx; height:100rpx;line-height:100rpx;">
-      付款
+    <view class='right row Rose white center' style="width: 250rpx; height:100rpx;line-height:100rpx;" bindtap="orderPage">
+      下单
     </view>
 
 

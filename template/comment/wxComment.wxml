@@ -24,16 +24,14 @@
 </template>
 
 <template name="wxComment">
-  <form bindreset="reset" class="lower pin White">
+  <form bindreset="reset" class="lower pin White border-top-rose">
     <input class="lower-left " placeholder-style="color:red" bindinput="bindKeyInput" bindconfirm="wxSend" confirm-type="send" placeholder="  请在此评论！暂时不支持表情包" />
     <view class='lower-right'>
 
-      <button class="lower-right-wechat" open-type="contact">
-        <icon class="iconfont icon-weixin1"></icon>
-      </button>
+
 
       <button class="lower-right-send " bindtap='wxSend' data-Uuid='{{uuid}}'  formType="reset" >
-        <icon size='32' class="iconfont icon-send"></icon>
+        <icon size='32' class="iconfont icon-send rose"></icon>
       </button>
     </view>
   </form>

@@ -311,10 +311,8 @@ page {
   bottom: 0;
   right: 0;
   z-index: 1;
-  width: 750rpx;
-  height: 100rpx;
-  border-top: 1px solid gainsboro;
 }
-
-
+.border-top-rose{
+ border-top: 2px solid #f0145a;
+}
 

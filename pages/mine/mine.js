@@ -4,7 +4,14 @@ Page({
   data: {
     userInfo: {},
     motto: 'Hello World',
+    listEvent:[
+      {
+        id: 'address',
+        name: '地址管理',  
+      },
+    ],
     list: [
+  
       {
         id: 'about_us',
         name: '关于我们',
@@ -24,6 +31,7 @@ Page({
           }
         ]
       }
+
     ]
   },
   onLoad: function () {
@@ -59,5 +67,19 @@ Page({
     this.setData({
       list: list
     });
+  },
+  listEvent: function (e) {
+    let that = this;
+    var id = e.currentTarget.id;
+    if(id=='address'){
+  
+      
+        app.chooseAddress(function (res) {
+          that.setData({
+            address: res
+          })
+        });
+    }
+  
   }
 })
